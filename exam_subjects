@@ -1831,4 +1831,129 @@ int main(void)
 -e 
 
 
+Assignment name  : ft_print_numbers
+Expected files   : ft_print_numbers.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a function that displays all digits in ascending order.
+
+Your function must be declared as follows:
+
+void	ft_print_numbers(void);
+
+Example:
+$> ./ft_print_numbers | cat -e
+0123456789$>-e 
+
+Assignment name  : interval_space
+Expected files   : interval_space.c
+Allowed functions: write
+Version          : 1
+--------------------------------------------------------------------------------
+
+Write a program that displays exactly 3 spaces between each character on the
+standard output followed by a newline ('\n').
+
+If the number of arguments is not 1, display only a newline.
+
+Examples:
+
+$>./interval_space "abc"
+a   b   c
+$>./interval_space "Coconut" | cat -e
+C   o   c   o   n   u   t$
+$>./interval_space | cat -e
+$
+$>./interval_space "" | cat -e
+$
+
+
+-e 
+
+Assignment name  : nth_char
+Expected files   : nth_char.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+Write a function that takes two arguments: a string and a positive integer n.
+The function should print every nth character from the string, starting from 
+the nth position.
+
+The input string will contain only printable ASCII characters.
+
+If n is not a positive integer, print only a newline.
+If the string is empty, print only a newline.
+If n is greater than the string length, print only a newline.
+
+
+Your function must be declared as follows:
+		void print_nth_char(char *str, int n);
+
+Examples:
+int main(void)
+{
+    print_nth_char("ABCDEF", 2);    // prints "BDF\n"
+    print_nth_char("PROGRAMMING", 3); // prints "OAI\n"
+    print_nth_char("HELLOQUAD", 4);  // prints "LA\n"
+    print_nth_char("ABC", 1);        // prints "ABC\n"
+    print_nth_char("ABCDEF", 0);     // prints "\n"
+    print_nth_char("", 2);           // prints "\n"
+    return (0);
+}
+-e 
+
+Assignment name  : occ_z
+Expected files   : occ_z.c
+Allowed functions:
+Version          : 1
+--------------------------------------------------------------------------------
+
+Write a function that return the number of occurence of the character 'Z'
+in the given string.
+
+
+For example:
+XxxxYyy
+0
+
+XxZZyZ
+3
+
+Your function must be declared as follows:
+
+int     occ_z(char *str);
+
+
+-e 
+
+Assignment name  : rle
+Expected files   : rle.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a single string as an argument and applies a basic
+run-length encoding algorithm.
+
+The input string contains only uppercase letters (A–Z),
+with no character repeated more than 9 times consecutively.
+
+The RLE algorithm compresses sequences of the same character by replacing them
+with the number of repetitions followed by the character.
+
+If the string is empty or if the number of arguments is not 1, display a \n.
+
+If a character appears once, don't print the count (just the character).
+
+Examples:
+
+$> ./rle "AAABBC" | cat -e
+3A2BC$
+$> ./rle "ABCD" | cat -e
+ABCD$
+$> ./rle "" | cat -e
+$
+$> ./rle | cat -e
+$
+-e 
+
 

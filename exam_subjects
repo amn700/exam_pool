@@ -343,5 +343,60 @@ Your function must be declared as follows:
 void    ft_putnbr(int nb);
 
 
+Assignment name  : ft_star
+Expected files   : ft_star.c
+Allowed functions: write
+Version          : 1
+--------------------------------------------------------------------------------
+
+Write a program that displays seven star (*) followed by a newline (\n).
+
+Example:
+
+$>./ft_star
+*******
+$>./ft_star | cat -e
+*******$
+$>
+
+Assignment name  : ft_putstr
+Expected files   : ft_putstr.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a function that displays a string on the standard output.
+
+The pointer passed to the function contains the address of the string's first
+character.
+
+Your function must be declared as follows:
+
+void    ft_putstr(char *str);
+
+Assignment name  : sum_digits
+Expected files   : sum_digits.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a function that takes a string as parameter and returns the sum of all
+digits (0-9) it contains.
+
+Non-digit characters are ignored.
+if no digits are provided print 0.
+
+Your function must be declared as follows:
+
+int sum_digits(char *str);
+
+Examples:
+
+int main() {
+    sum_digits("abc123def456")  // returns 21
+    sum_digits("hello") // returns 0
+    sum_digits("42") // returns 6
+    sum_digits("") // returns 0
+}
+
+
 
 

@@ -711,308 +711,6 @@ $> ./aff_last_param | cat -e
 $
 
 
-Last login: Sat Aug  9 07:22:55 on console
-log 42 wizzard is up to date 
-mohchaib@c2r11p4 ~ % login
-login: exam
-Password:
-Last login: Fri Aug  1 14:56:28 on console
-c2r11p4:~ exam$ cd sub
--sh: cd: sub: No such file or directory
-c2r11p4:~ exam$ ls
-Downloads	Library		docs
-c2r11p4:~ exam$ 
-  [Restored Aug 9, 2025 at 7:31:01 AM]
-Last login: Sat Aug  9 07:30:39 on console
- 42 wizzard is up to date 
-mohchaib@c2r4p5 ~ % login
-login: exam
-Password:
-Login incorrect
-login: exam
-Password:
-Last login: Fri Aug  8 12:04:01 on ttys003
-c2r4p5:~ exam$ cd subjects/
-c2r4p5:subjects exam$ ls
-aff_f		digit_sum	nth_char	occ_z		write_string
-c2r4p5:subjects exam$ 
-c2r4p5:subjects exam$ ls
-aff_f		digit_sum	nth_char	occ_z		write_string
-c2r4p5:subjects exam$ cd occ_z/
-c2r4p5:occ_z exam$ ls
-subject.en.txt	subject.fr.txt	subject.ja.txt	subject.tr.txt
-subject.es.txt	subject.hy.txt	subject.ko.txt
-c2r4p5:occ_z exam$ vim subject.en.txt 
-c2r4p5:occ_z exam$ cd ..
-c2r4p5:subjects exam$ ls
-aff_f		digit_sum	nth_char	occ_z		write_string
-c2r4p5:subjects exam$ cd write_string/
-c2r4p5:write_string exam$ ls
-subject.en.txt	subject.es.txt	subject.fr.txt	subject.hy.txt	subject.ja.txt	subject.ko.txt	subject.tr.txt
-c2r4p5:write_string exam$ cd subject.en.txt 
--sh: cd: subject.en.txt: Not a directory
-c2r4p5:write_string exam$ vim subject.en.txt 
-c2r4p5:write_string exam$ cd ..
-c2r4p5:subjects exam$ ls
-aff_f		digit_sum	nth_char	occ_z		write_string
-c2r4p5:subjects exam$ cd ..
-c2r4p5:~ exam$ 
-
-
-
-  [Restored Aug 9, 2025 at 7:34:17 AM]
-Last login: Sat Aug  9 07:34:06 on console
- 42 wizzard is up to date 
-mohchaib@c2r4p3 ~ % login
-login: exam
-Password:
-Last login: Fri Aug  8 11:15:32 on ttys004
-c2r4p3:~ exam$ ls
-Desktop		Downloads	docs		subjects
-Documents	Library		private		traces
-c2r4p3:~ exam$ cd subjects/
-c2r4p3:subjects exam$ 
-c2r4p3:subjects exam$ ls
-aff_f		base16		even		ft_putnbr	nth_char
-aff_last_param	digit_sum	first_last_char	is_palindrome	occ_a
-c2r4p3:subjects exam$ cd base16/
-c2r4p3:base16 exam$ vim subject.en.txt 
-c2r4p3:base16 exam$ cd ..
-c2r4p3:subjects exam$ ls
-aff_f		base16		even		ft_putnbr	nth_char
-aff_last_param	digit_sum	first_last_char	is_palindrome	occ_a
-c2r4p3:subjects exam$ cd occ_a/
-c2r4p3:occ_a exam$ vim subject.en.txt 
-c2r4p3:occ_a exam$ cd ..
-c2r4p3:subjects exam$ ls
-aff_f		base16		even		ft_putnbr	nth_char
-aff_last_param	digit_sum	first_last_char	is_palindrome	occ_a
-c2r4p3:subjects exam$ 
-
-
-
-
-
-
-
-
-c2r4p3:subjects exam$ ls
-aff_f		base16		even		ft_putnbr	nth_char
-aff_last_param	digit_sum	first_last_char	is_palindrome	occ_a
-c2r4p3:subjects exam$ cd is_palindrome/
-c2r4p3:is_palindrome exam$ vim subject.en.txt 
-c2r4p3:is_palindrome exam$ cd ..
-c2r4p3:subjects exam$ ls
-aff_f		base16		even		ft_putnbr	nth_char
-aff_last_param	digit_sum	first_last_char	is_palindrome	occ_a
-c2r4p3:subjects exam$ cd first_last_char/
-c2r4p3:first_last_char exam$ cd ..
-c2r4p3:subjects exam$ cd first_last_char/
-c2r4p3:first_last_char exam$ vim subject.en.txt 
-c2r4p3:first_last_char exam$ cd ..
-c2r4p3:subjects exam$ ls
-aff_f		base16		even		ft_putnbr	nth_char
-aff_last_param	digit_sum	first_last_char	is_palindrome	occ_a
-c2r4p3:subjects exam$ cd aff_last_param/
-c2r4p3:aff_last_param exam$ vim subject.en.txt 
-c2r4p3:aff_last_param exam$ cd ..
-c2r4p3:subjects exam$ ls 
-aff_f		base16		even		ft_putnbr	nth_char
-aff_last_param	digit_sum	first_last_char	is_palindrome	occ_a
-c2r4p3:subjects exam$ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  [Restored Aug 9, 2025 at 7:38:13 AM]
-Last login: Sat Aug  9 07:37:40 on console
-login
- 42 wizzard is up to date 
-^L%                                                                             mohchaib@c2r4p1 ~ % login
-login: exam
-Password:
-Last login: Fri Aug  8 10:23:17 on ttys005
-c2r4p1:~ exam$ ls
-Desktop		Downloads	docs		subjects
-Documents	Library		private		traces
-c2r4p1:~ exam$ cd subjects/
-c2r4p1:~ exam$ cd subjects/
-c2r4p1:subjects exam$ ls
-aff_k		maff_alpha	nth_char	occ_a
-c2r4p1:subjects exam$ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  [Restored Aug 9, 2025 at 7:40:06 AM]
-Last login: Sat Aug  9 07:39:42 on console
-l 42 wizzard is up to date 
-mohchaib@c2r3p9 ~ % login
-login: exam
-Password:
-Last login: Fri Aug  8 10:12:23 on ttys004
-c2r3p9:~ exam$ cd subjects/
-c2r3p9:subjects exam$ ls
-aff_q	even
-c2r3p9:subjects exam$ 
-  [Restored Aug 9, 2025 at 7:41:56 AM]
-Last login: Sat Aug  9 07:41:06 on console
- 42 wizzard is up to date 
-mohchaib@c2r3p7 ~ % login
-login: exam
-Password:
-Last login: Fri Aug  8 10:00:16 on ttys000
-c2r3p7:~ exam$ 
-c2r3p7:~ exam$ ls
-Desktop		Downloads	docs		subjects
-Documents	Library		private		traces
-c2r3p7:~ exam$ cd subjects/
-c2r3p7:subjects exam$ ls
-aff_c		base16		digit_sum	first_last_char	ft_putnbr	nth_char	title
-aff_last_param	count_alen	even		ft_itoa		ft_split	sort_list
-c2r3p7:subjects exam$ cd ft_itoa/
-c2r3p7:ft_itoa exam$ ls
-subject.en.txt	subject.fr.txt	subject.it.txt	subject.ko.txt	subject.tr.txt
-subject.es.txt	subject.hy.txt	subject.ja.txt	subject.pt.txt
-c2r3p7:ft_itoa exam$ vim subject.en.txt 
-c2r3p7:ft_itoa exam$ cd ..
-c2r3p7:subjects exam$ cd ft_split/
-c2r3p7:ft_split exam$ vim subject.e  
-subject.en.txt  subject.es.txt  
-c2r3p7:ft_split exam$ vim subject.e
-subject.en.txt  subject.es.txt  
-c2r3p7:ft_split exam$ vim subject.en.txt 
-c2r3p7:ft_split exam$ cd ..
-c2r3p7:subjects exam$ ls
-aff_c		base16		digit_sum	first_last_char	ft_putnbr	nth_char	title
-aff_last_param	count_alen	even		ft_itoa		ft_split	sort_list
-c2r3p7:subjects exam$ cd sort_list/
-c2r3p7:sort_list exam$ vim subject.en.txt 
-c2r3p7:sort_list exam$ cd ..
-c2r3p7:subjects exam$ lls
--sh: lls: command not found
-c2r3p7:subjects exam$ ls
-aff_c		base16		digit_sum	first_last_char	ft_putnbr	nth_char	title
-aff_last_param	count_alen	even		ft_itoa		ft_split	sort_list
-c2r3p7:subjects exam$ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  [Restored Aug 9, 2025 at 7:46:03 AM]
-Last login: Sat Aug  9 07:46:01 on console
- 42 wizzard is up to date 
-mohchaib@c2r3p7 ~ % login
-login: exam
-Password:
-Last login: Sat Aug  9 07:42:01 on ttys000
-c2r3p7:~ exam$ ls
-Desktop		Downloads	docs		subjects
-Documents	Library		private		traces
-c2r3p7:~ exam$ cd subjects/
-c2r3p7:~ exam$ cd subjects/ls
--sh: cd: subjects/ls: No such file or directory
-c2r3p7:~ exam$ cd ..
-c2r3p7:/ exam$ ls
-Applications	Volumes		dev		gucci.mp3	private		tmp
-Library		bin		etc		iSCSI		root		usr
-System		cores		exam		nfs		sbin		var
-Users		default.profraw	goinfre		opt		sgoinfre
-c2r3p7:/ exam$ cd -
-/exam
-c2r3p7:~ exam$ ls
-Desktop		Downloads	docs		subjects
-Documents	Library		private		traces
-c2r3p7:~ exam$ cd subjects/
-c2r3p7:subjects exam$ ks
--sh: ks: command not found
-c2r3p7:subjects exam$ ls
-aff_c		base16		digit_sum	first_last_char	ft_putnbr	nth_char	title
-aff_last_param	count_alen	even		ft_itoa		ft_split	sort_list
-c2r3p7:subjects exam$ cd ft_itoa/
-c2r3p7:ft_itoa exam$ ls
-subject.en.txt	subject.fr.txt	subject.it.txt	subject.ko.txt	subject.tr.txt
-subject.es.txt	subject.hy.txt	subject.ja.txt	subject.pt.txt
-c2r3p7:ft_itoa exam$ cd ..
-c2r3p7:subjects exam$ ls
-aff_c		base16		digit_sum	first_last_char	ft_putnbr	nth_char	title
-aff_last_param	count_alen	even		ft_itoa		ft_split	sort_list
-c2r3p7:subjects exam$ cd ..
-c2r3p7:~ exam$ ls
-Desktop		Downloads	docs		subjects
-Documents	Library		private		traces
-c2r3p7:~ exam$ #!/bin/bash
-c2r3p7:~ exam$ mkdir -p ~/Desktop/notes
-c2r3p7:~ exam$ cd ~/subjects || exit
-c2r3p7:subjects exam$ 
-c2r3p7:subjects exam$ for dir in */; do
->     if [[ -f "${dir}subject.en.txt" ]]; then
->         cp "${dir}subject.en.txt" ~/Desktop/notes/"${dir%/}.txt"
->     fi
-> done
-c2r3p7:subjects exam$ 
-c2r3p7:subjects exam$ ls
-aff_c		base16		digit_sum	first_last_char	ft_putnbr	nth_char	title
-aff_last_param	count_alen	even		ft_itoa		ft_split	sort_list
-c2r3p7:subjects exam$ cd ..
-c2r3p7:~ exam$ ls
-Desktop		Downloads	docs		subjects
-Documents	Library		private		traces
-c2r3p7:~ exam$ cdcd Desktop/
--sh: cdcd: command not found
-c2r3p7:~ exam$ cd Desktop/
-c2r3p7:Desktop exam$ ls
-notes
-c2r3p7:Desktop exam$ cat notes/
-cat: notes/: Is a directory
-c2r3p7:Desktop exam$ cd notes/
-c2r3p7:notes exam$ ls
-aff_c.txt		count_alen.txt		first_last_char.txt	ft_split.txt		title.txt
-aff_last_param.txt	digit_sum.txt		ft_itoa.txt		nth_char.txt
-base16.txt		even.txt		ft_putnbr.txt		sort_list.txt
-c2r3p7:notes exam$ cat *
 Assignment name  : aff_c
 Expected files   : aff_c.c
 Version          : 1
@@ -1306,4 +1004,229 @@ $
 $>./title
 $
 $>
+
+Assignment name  : aff_first_param
+Expected files   : aff_first_param.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes strings as arguments, and displays its first
+argument followed by a \n.
+
+If the number of arguments is less than 1, the program displays \n.
+
+Example:
+
+$> ./aff_first_param it is at this moment jackson knew | cat -e
+it$
+$> ./aff_first_param "I bet you can't print me" | cat -e
+I bet you can't print me$
+$> ./aff_first_param | cat -e
+$
+Assignment name  : aff_i
+Expected files   : aff_i.c
+Version          : 1
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a string, and displays the first 'i' character it
+encounters in it, followed by a newline. If there are no 'i' characters in the
+string, the program diplays 'i' followed by a newline. If the number of parameters is not
+1, the program displays 'i' followed by a newline.
+
+Example:
+
+$> ./aff_i "abc" | cat -e
+i$
+$> ./aff_i 'RaInB0w d4Sh!' | cat -e
+i$
+$> ./aff_i 'ThE C4k3 Is a L|3' | cat -e
+i$
+$> ./aff_i 'C0cOnUt 0N th3 b3AcH' | cat -e
+i$
+$> ./aff_i | cat -e
+i$
+    Assignment name  : base16
+Expected files   : base16.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a single decimal number as argument and display its
+base 16 representation to the standard output, followed by a \n.
+
+The input will always be a valid positive integer or zero.
+You must not handle invalid inputs (negative numbers, non-numeric characters).
+
+If the number of arguments is not 1, the program displays a \n.
+
+Base 16 uses the following symbols:
+0 = 0, 1 = 1, 2 = 2, 3 = 3, 4 = 4, 5 = 5, 6 = 6, 7 = 7, 8 = 8, 9 = 9,
+A = 10, B = 11, C = 12, D = 13, E = 14, F = 15
+
+Base 16 conversion rules:
+- Each position represents a power of 16 (rightmost is 16^0, next is 16^1, etc.)
+- To convert from decimal: repeatedly divide by 16 and use remainders as digits
+- Convert each remainder to its corresponding symbol (0-9 for 0-9, A-F for 10-15)
+
+Examples:
+$>./base16 "0" | cat -e
+0$
+$>./base16 "10" | cat -e
+A$
+$>./base16 "15" | cat -e
+F$
+$>./base16 "16" | cat -e
+10$
+$>./base16 "255" | cat -e
+FF$
+$>./base16 "256" | cat -e
+100$
+$>./base16 "3735928559" | cat -e
+DEADBEEF$
+$>./base16 | cat -e
+$Assignment name  : count_alen
+Expected files   : count_alen.c
+Allowed functions:
+Version          : 1
+--------------------------------------------------------------------------------
+
+Write a function that return the length of a string until the first 'a' character
+encourred.
+
+If no 'a' is present in the string, return the total length of the string.
+
+Your function must be declared as follows:
+
+int count_alen(char *str);
+
+Assignment name  : count_letters
+Expected files   : count_letters.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a string and counts the number of alphabetical characters (a-z, A-Z) in it. 
+
+Your program should display the number followed by a \n.
+
+If the string is empty or if the number of arguments is not 1, display a \n.
+
+Example : 
+
+$> ./count_letters "Hello World"
+10$
+$> ./count_letters "H3ll0 W0rld" | cat -e
+7$
+$> ./count_letters "" | cat -e
+$
+$> ./count_letters "1337" | cat -e
+0$
+Assignment name  : ft_putnbr
+Expected files   : ft_putnbr.c
+Version          : 1
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+
+Write a function that displays the number entered as a parameter. The function
+has to be able to display all possible values within an int type variable.
+
+
+Your function must be declared as follows:
+
+void    ft_putnbr(int nb);
+Assignment name  : inter
+Expected files   : inter.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes two strings and displays, without doubles, the
+characters that appear in both strings, in the order they appear in the first
+one.
+
+The display will be followed by a \n.
+
+If the number of arguments is not 2, the program displays \n.
+
+Examples:
+
+$>./inter "padinton" "paqefwtdjetyiytjneytjoeyjnejeyj" | cat -e
+padinto$
+$>./inter ddf6vewg64f gtwthgdwthdwfteewhrtag6h4ffdhsd | cat -e
+df6ewg4$
+$>./inter "nothing" "This sentence hides nothing" | cat -e
+nothig$
+$>./inter | cat -e
+$
+Assignment name  : nth_char
+Expected files   : nth_char.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+Write a function that takes two arguments: a string and a positive integer n.
+The function should print every nth character from the string, starting from 
+the nth position.
+
+The input string will contain only printable ASCII characters.
+
+If n is not a positive integer, print only a newline.
+If the string is empty, print only a newline.
+If n is greater than the string length, print only a newline.
+
+
+Your function must be declared as follows:
+		void print_nth_char(char *str, int n);
+
+Examples:
+int main(void)
+{
+    print_nth_char("ABCDEF", 2);    // prints "BDF\n"
+    print_nth_char("PROGRAMMING", 3); // prints "OAI\n"
+    print_nth_char("HELLOQUAD", 4);  // prints "LA\n"
+    print_nth_char("ABC", 1);        // prints "ABC\n"
+    print_nth_char("ABCDEF", 0);     // prints "\n"
+    print_nth_char("", 2);           // prints "\n"
+    return (0);
+}
+Assignment name  : odd
+Expected files   : odd.c
+Allowed functions: write
+Version          : 1
+--------------------------------------------------------------------------------
+
+Write a program that display all odd digits from 0 to 10, followed by a
+newline '\n'.
+
+Example:
+$> ./odd
+13579
+$> ./odd | cat -e
+13579$
+$>
+Assignment name  : rle
+Expected files   : rle.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a single string as an argument and applies a basic
+run-length encoding algorithm.
+
+The input string contains only uppercase letters (A–Z),
+with no character repeated more than 9 times consecutively.
+
+The RLE algorithm compresses sequences of the same character by replacing them
+with the number of repetitions followed by the character.
+
+If the string is empty or if the number of arguments is not 1, display a \n.
+
+If a character appears once, don't print the count (just the character).
+
+Examples:
+
+$> ./rle "AAABBC" | cat -e
+3A2BC$
+$> ./rle "ABCD" | cat -e
+ABCD$
+$> ./rle "" | cat -e
+$
+$> ./rle | cat -e
+$
 

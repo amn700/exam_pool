@@ -1278,3 +1278,118 @@ int main(void)
     print_nth_char("", 2);           // prints "\n"
     return (0);
 }
+
+Assignment name  : aff_x
+Expected files   : aff_x.c
+Version          : 1
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a string, and displays the first 'x' character it
+encounters in it, followed by a newline. If there are no 'x' characters in the
+string, the program diplays 'x' followed by a newline. If the number of parameters is not
+1, the program displays 'x' followed by a newline.
+
+Example:
+
+$> ./aff_x "abc" | cat -e
+x$
+$> ./aff_x 'RaInB0w d4Sh!' | cat -e
+x$
+$> ./aff_x 'ThE C4k3 Is a L|3' | cat -e
+x$
+$> ./aff_x 'C0cOnUt 0N th3 b3AcH' | cat -e
+x$
+$> ./aff_x | cat -e
+x$
+    -e 
+
+Assignment name  : ft_strlen
+Expected files   : ft_strlen.c
+Allowed functions: 
+--------------------------------------------------------------------------------
+
+Write a function that returns the length of a string.
+
+Your function must be declared as follows:
+
+int	ft_strlen(char *str);
+-e 
+
+Assignment name  : nth_char
+Expected files   : nth_char.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+Write a function that takes two arguments: a string and a positive integer n.
+The function should print every nth character from the string, starting from 
+the nth position.
+
+The input string will contain only printable ASCII characters.
+
+If n is not a positive integer, print only a newline.
+If the string is empty, print only a newline.
+If n is greater than the string length, print only a newline.
+
+
+Your function must be declared as follows:
+		void print_nth_char(char *str, int n);
+
+Examples:
+int main(void)
+{
+    print_nth_char("ABCDEF", 2);    // prints "BDF\n"
+    print_nth_char("PROGRAMMING", 3); // prints "OAI\n"
+    print_nth_char("HELLOQUAD", 4);  // prints "LA\n"
+    print_nth_char("ABC", 1);        // prints "ABC\n"
+    print_nth_char("ABCDEF", 0);     // prints "\n"
+    print_nth_char("", 2);           // prints "\n"
+    return (0);
+}
+-e 
+
+Assignment name  : odd
+Expected files   : odd.c
+Allowed functions: write
+Version          : 1
+--------------------------------------------------------------------------------
+
+Write a program that display all odd digits from 0 to 10, followed by a
+newline '\n'.
+
+Example:
+$> ./odd
+13579
+$> ./odd | cat -e
+13579$
+$>
+-e 
+
+Assignment name  : rle
+Expected files   : rle.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a single string as an argument and applies a basic
+run-length encoding algorithm.
+
+The input string contains only uppercase letters (A–Z),
+with no character repeated more than 9 times consecutively.
+
+The RLE algorithm compresses sequences of the same character by replacing them
+with the number of repetitions followed by the character.
+
+If the string is empty or if the number of arguments is not 1, display a \n.
+
+If a character appears once, don't print the count (just the character).
+
+Examples:
+
+$> ./rle "AAABBC" | cat -e
+3A2BC$
+$> ./rle "ABCD" | cat -e
+ABCD$
+$> ./rle "" | cat -e
+$
+$> ./rle | cat -e
+$
+

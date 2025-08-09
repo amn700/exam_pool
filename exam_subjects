@@ -5041,3 +5041,194 @@ $> ./aff_u | cat -e
 u$
 
 
+Assignment name  : aff_last_param
+Expected files   : aff_last_param.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes strings as arguments, and displays its last
+argument followed by a newline.
+
+If the number of arguments is less than 1, the program displays a newline.
+
+Examples:
+
+$> ./aff_last_param "Zelda" "is" "a" "boy" | cat -e
+boy$
+$> ./aff_last_param 'I read this on internet !' | cat -e
+I read this on internet !$
+$> ./aff_last_param | cat -e
+$
+-e 
+
+Assignment name  : aff_n
+Expected files   : aff_n.c
+Version          : 1
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a string, and displays the first 'n' character it
+encounters in it, followed by a newline. If there are no 'n' characters in the
+string, the program diplays 'n' followed by a newline. If the number of parameters is not
+1, the program displays 'n' followed by a newline.
+
+Example:
+
+$> ./aff_n "abc" | cat -e
+n$
+$> ./aff_n 'RaInB0w d4Sh!' | cat -e
+n$
+$> ./aff_n 'ThE C4k3 Is a L|3' | cat -e
+n$
+$> ./aff_n 'C0cOnUt 0N th3 b3AcH' | cat -e
+n$
+$> ./aff_n | cat -e
+n$
+    -e 
+
+Assignment name  : first_last_char
+Expected files   : first_last_char.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a string as argument and displays only the first
+and last character of that string, followed by a newline.
+
+If the string is empty or if the number of arguments is not 1, display only
+a newline.
+
+If the string has only one character, display that character twice.
+
+Examples:
+
+$> ./first_last_char "hello"
+ho
+$> ./first_last_char "world" | cat -e
+wd$
+$> ./first_last_char "a" | cat -e
+aa$
+$> ./first_last_char "" | cat -e
+$
+$> ./first_last_char | cat -e
+$
+-e 
+
+Assignment name  : ft_putnbr
+Expected files   : ft_putnbr.c
+Version          : 1
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+
+Write a function that displays the number entered as a parameter. The function
+has to be able to display all possible values within an int type variable.
+
+
+Your function must be declared as follows:
+
+void    ft_putnbr(int nb);
+-e 
+
+Assignment name  : ft_strlen
+Expected files   : ft_strlen.c
+Allowed functions: 
+--------------------------------------------------------------------------------
+
+Write a function that returns the length of a string.
+
+Your function must be declared as follows:
+
+int	ft_strlen(char *str);
+-e 
+
+Assignment name  : nth_char
+Expected files   : nth_char.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+Write a function that takes two arguments: a string and a positive integer n.
+The function should print every nth character from the string, starting from 
+the nth position.
+
+The input string will contain only printable ASCII characters.
+
+If n is not a positive integer, print only a newline.
+If the string is empty, print only a newline.
+If n is greater than the string length, print only a newline.
+
+
+Your function must be declared as follows:
+		void print_nth_char(char *str, int n);
+
+Examples:
+int main(void)
+{
+    print_nth_char("ABCDEF", 2);    // prints "BDF\n"
+    print_nth_char("PROGRAMMING", 3); // prints "OAI\n"
+    print_nth_char("HELLOQUAD", 4);  // prints "LA\n"
+    print_nth_char("ABC", 1);        // prints "ABC\n"
+    print_nth_char("ABCDEF", 0);     // prints "\n"
+    print_nth_char("", 2);           // prints "\n"
+    return (0);
+}
+-e 
+
+Assignment name  : rev_print
+Expected files   : rev_print.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a function that print a string but in reverse order.
+It must return its parameter.
+Beware that the string wont be modifiable.
+Your function must be declared as follows:
+
+char    *rev_print(char *str);
+
+Examples:
+
+int	main(void)
+{
+	rev_print("rainbow dash");
+	write(1, "\n", 1);
+	rev_print("Ponies are awesome");
+	write(1, "\n", 1);
+	rev_print("");
+	write(1, "\n", 1);
+	return (0);
+}
+
+$> ./a.out | cat -e
+hsad wobniar$
+emosewa era seinoP$
+$
+$>
+-e 
+
+Assignment name  : rle
+Expected files   : rle.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a single string as an argument and applies a basic
+run-length encoding algorithm.
+
+The input string contains only uppercase letters (A–Z),
+with no character repeated more than 9 times consecutively.
+
+The RLE algorithm compresses sequences of the same character by replacing them
+with the number of repetitions followed by the character.
+
+If the string is empty or if the number of arguments is not 1, display a \n.
+
+If a character appears once, don't print the count (just the character).
+
+Examples:
+
+$> ./rle "AAABBC" | cat -e
+3A2BC$
+$> ./rle "ABCD" | cat -e
+ABCD$
+$> ./rle "" | cat -e
+$
+$> ./rle | cat -e
+$

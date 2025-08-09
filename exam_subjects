@@ -579,3 +579,137 @@ int ft_strlen(char *str);
 
 
 
+Assignment name  : base16
+Expected files   : base16.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a single decimal number as argument and display its
+base 16 representation to the standard output, followed by a \n.
+
+The input will always be a valid positive integer or zero.
+You must not handle invalid inputs (negative numbers, non-numeric characters).
+
+If the number of arguments is not 1, the program displays a \n.
+
+Base 16 uses the following symbols:
+0 = 0, 1 = 1, 2 = 2, 3 = 3, 4 = 4, 5 = 5, 6 = 6, 7 = 7, 8 = 8, 9 = 9,
+A = 10, B = 11, C = 12, D = 13, E = 14, F = 15
+
+Base 16 conversion rules:
+- Each position represents a power of 16 (rightmost is 16^0, next is 16^1, etc.)
+- To convert from decimal: repeatedly divide by 16 and use remainders as digits
+- Convert each remainder to its corresponding symbol (0-9 for 0-9, A-F for 10-15)
+
+Examples:
+$>./base16 "0" | cat -e
+0$
+$>./base16 "10" | cat -e
+A$
+$>./base16 "15" | cat -e
+F$
+$>./base16 "16" | cat -e
+10$
+$>./base16 "255" | cat -e
+FF$
+$>./base16 "256" | cat -e
+100$
+$>./base16 "3735928559" | cat -e
+DEADBEEF$
+$>./base16 | cat -e
+$
+
+Assignment name  : occ_a
+Expected files   : occ_a.c
+Allowed functions:
+Version          : 1
+--------------------------------------------------------------------------------
+
+Write a function that return the number of occurence of the character 'A'
+in the given string.
+
+For example:
+Hello World
+0
+
+ZzAaa
+1
+
+Your function must be declared as follows:
+
+int     occ_a(char *str);
+
+Assignment name  : is_palindrome
+Expected files   : is_palindrome.c
+Version          : 1.1
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes one string, if the string is a palindrome displays it
+followed by a newline (\n).
+
+If the number of arguments is not 1 or the string is not a palindrome, the program
+displays a newline (\n).
+
+A palindrome is a word, phrase, or sequence that reads the same backwards as forwards.
+
+Exemples:
+
+$>./is_palindrome "aaaabbbbbbbbaaaa" | cat -e
+aaaabbbbbbbbaaaa$
+$>./is_palindrome "abcdeedcbb" | cat -e
+$
+$>./is_palindrome "one" "two" | cat -e
+$
+$>./is_palindrome
+$
+$>
+
+Assignment name  : first_last_char
+Expected files   : first_last_char.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a string as argument and displays only the first
+and last character of that string, followed by a newline.
+
+If the string is empty or if the number of arguments is not 1, display only
+a newline.
+
+If the string has only one character, display that character twice.
+
+Examples:
+
+$> ./first_last_char "hello"
+ho
+$> ./first_last_char "world" | cat -e
+wd$
+$> ./first_last_char "a" | cat -e
+aa$
+$> ./first_last_char "" | cat -e
+$
+$> ./first_last_char | cat -e
+$
+
+Assignment name  : aff_last_param
+Expected files   : aff_last_param.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes strings as arguments, and displays its last
+argument followed by a newline.
+
+If the number of arguments is less than 1, the program displays a newline.
+
+Examples:
+
+$> ./aff_last_param "Zelda" "is" "a" "boy" | cat -e
+boy$
+$> ./aff_last_param 'I read this on internet !' | cat -e
+I read this on internet !$
+$> ./aff_last_param | cat -e
+$
+
+
+
+

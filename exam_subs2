@@ -1376,6 +1376,264 @@ The input string contains only uppercase letters (A–Z),
 with no character repeated more than 9 times consecutively.
 
 The RLE algorithm compresses sequences of the same character by replacing them
+
+Assignment name  : aff_first_param
+Expected files   : aff_first_param.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes strings as arguments, and displays its first
+argument followed by a \n.
+
+If the number of arguments is less than 1, the program displays \n.
+
+Example:
+
+$> ./aff_first_param it is at this moment jackson knew | cat -e
+it$
+$> ./aff_first_param "I bet you can't print me" | cat -e
+I bet you can't print me$
+$> ./aff_first_param | cat -e
+$
+-e 
+
+Assignment name  : aff_p
+Expected files   : aff_p.c
+Version          : 1
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a string, and displays the first 'p' character it
+encounters in it, followed by a newline. If there are no 'p' characters in the
+string, the program diplays 'p' followed by a newline. If the number of parameters is not
+1, the program displays 'p' followed by a newline.
+
+Example:
+
+$> ./aff_p "abc" | cat -e
+p$
+$> ./aff_p 'RaInB0w d4Sh!' | cat -e
+p$
+$> ./aff_p 'ThE C4k3 Is a L|3' | cat -e
+p$
+$> ./aff_p 'C0cOnUt 0N th3 b3AcH' | cat -e
+p$
+$> ./aff_p | cat -e
+p$
+    -e 
+
+Assignment name  : base16
+Expected files   : base16.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a single decimal number as argument and display its
+base 16 representation to the standard output, followed by a \n.
+
+The input will always be a valid positive integer or zero.
+You must not handle invalid inputs (negative numbers, non-numeric characters).
+
+If the number of arguments is not 1, the program displays a \n.
+
+Base 16 uses the following symbols:
+0 = 0, 1 = 1, 2 = 2, 3 = 3, 4 = 4, 5 = 5, 6 = 6, 7 = 7, 8 = 8, 9 = 9,
+A = 10, B = 11, C = 12, D = 13, E = 14, F = 15
+
+Base 16 conversion rules:
+- Each position represents a power of 16 (rightmost is 16^0, next is 16^1, etc.)
+- To convert from decimal: repeatedly divide by 16 and use remainders as digits
+- Convert each remainder to its corresponding symbol (0-9 for 0-9, A-F for 10-15)
+
+Examples:
+$>./base16 "0" | cat -e
+0$
+$>./base16 "10" | cat -e
+A$
+$>./base16 "15" | cat -e
+F$
+$>./base16 "16" | cat -e
+10$
+$>./base16 "255" | cat -e
+FF$
+$>./base16 "256" | cat -e
+100$
+$>./base16 "3735928559" | cat -e
+DEADBEEF$
+$>./base16 | cat -e
+$-e 
+
+Assignment name  : count_len
+Expected files   : count_len.c
+Allowed functions:
+Version          : 1
+--------------------------------------------------------------------------------
+
+Write a function that return the length of a string.
+
+Your function must be declared as follows:
+
+int count_len(char *str);
+
+-e 
+
+Assignment name  : ft_itoa
+Expected files   : ft_itoa.c
+Allowed functions: malloc
+--------------------------------------------------------------------------------
+
+Write a function that takes an int and converts it to a null-terminated string.
+The function returns the result in a char array that you must allocate.
+
+Your function must be declared as follows:
+
+char	*ft_itoa(int nbr);
+-e 
+
+Assignment name  : ft_list_remove_if
+Expected files   : ft_list_remove_if.c
+Allowed functions: free
+--------------------------------------------------------------------------------
+
+Write a function called ft_list_remove_if that removes from the
+passed list any element the data of which is "equal" to the reference data.
+
+It will be declared as follows :
+
+void ft_list_remove_if(t_list **begin_list, void *data_ref, int (*cmp)());
+
+cmp takes two void* and returns 0 when both parameters are equal.
+
+You have to use the ft_list.h file, which will contain:
+
+$>cat ft_list.h
+typedef struct      s_list
+{
+    struct s_list   *next;
+    void            *data;
+}                   t_list;
+$>
+-e 
+
+Assignment name  : ft_putnbr
+Expected files   : ft_putnbr.c
+Version          : 1
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+
+Write a function that displays the number entered as a parameter. The function
+has to be able to display all possible values within an int type variable.
+
+
+Your function must be declared as follows:
+
+void    ft_putnbr(int nb);
+-e 
+
+Assignment name  : ft_split
+Expected files   : ft_split.c
+Allowed functions: malloc, free
+--------------------------------------------------------------------------------
+
+Write a function that takes a string, splits it into words, and returns them as
+a NULL-terminated array of strings.
+
+A "word" is defined as a part of a string delimited either by spaces/tabs/new
+lines, or by the start/end of the string.
+
+Your function must be declared as follows:
+
+char    **ft_split(char *str);
+-e 
+
+Assignment name  : maff_revalpha
+Expected files   : maff_revalpha.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that displays the alphabet in reverse, with even letters in
+uppercase, and odd letters in lowercase, followed by a newline.
+
+Example:
+
+$> ./maff_revalpha | cat -e
+zYxWvUtSrQpOnMlKjIhGfEdCbA$
+-e 
+
+Assignment name  : nth_char
+Expected files   : nth_char.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+Write a function that takes two arguments: a string and a positive integer n.
+The function should print every nth character from the string, starting from 
+the nth position.
+
+The input string will contain only printable ASCII characters.
+
+If n is not a positive integer, print only a newline.
+If the string is empty, print only a newline.
+If n is greater than the string length, print only a newline.
+
+
+Your function must be declared as follows:
+		void print_nth_char(char *str, int n);
+
+Examples:
+int main(void)
+{
+    print_nth_char("ABCDEF", 2);    // prints "BDF\n"
+    print_nth_char("PROGRAMMING", 3); // prints "OAI\n"
+    print_nth_char("HELLOQUAD", 4);  // prints "LA\n"
+    print_nth_char("ABC", 1);        // prints "ABC\n"
+    print_nth_char("ABCDEF", 0);     // prints "\n"
+    print_nth_char("", 2);           // prints "\n"
+    return (0);
+}
+-e 
+
+Assignment name  : pingpong
+Expected files   : pingpong.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a function that takes an integer between 1 and 1000, and displays the appropriate output as in the example.
+
+Your function must be declared as follows:
+
+void	pingpong(int n);
+
+If the number is a multiple of 3, it displays 'ping' followed by a newline.
+
+If the number is a multiple of 5, it displays 'pong' followed by a newline.
+
+If the number is both a multiple of 3 and a multiple of 5, it displays 'pingpong' followed by a newline.
+
+If the number is not a multiple of 3 or 5, it displays the number followed by a newline.
+Examples: 
+
+int	main(void)
+{
+	pingpong(1); // 1
+	pingpong(3); // ping
+	pingpong(5); // pong
+	pingpong(15); // pingpong
+	pingpong(999); // ping
+	pingpong(998); // 998
+	return (0);
+}-e 
+
+Assignment name  : rle
+Expected files   : rle.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a single string as an argument and applies a basic
+run-length encoding algorithm.
+
+The input string contains only uppercase letters (A–Z),
+with no character repeated more than 9 times consecutively.
+
+The RLE algorithm compresses sequences of the same character by replacing them
 with the number of repetitions followed by the character.
 
 If the string is empty or if the number of arguments is not 1, display a \n.
@@ -1392,4 +1650,51 @@ $> ./rle "" | cat -e
 $
 $> ./rle | cat -e
 $
+-e 
+
+Assignment name  : title
+Expected files   : title.c
+Version          : 1
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+
+Write a program that takes one string and displays the characters with each first
+letter of each word in uppercase followed by a newline (\n) on the standard output.
+
+If the number of arguments is not 1, the program displays a newline (\n).
+
+A "word" is defined as part of a string delimited by spaces, or by the start/end
+of the string.
+
+
+Exemples:
+
+$>./title "pgjqwgjpwoqgejowgqw" | cat -e
+Pgjqwgjpwoqgejowgqw$
+$>./title 'no no no no!!!!!' | cat -e
+No No No No!!!!!$
+$>./title "one" "two" | cat -e
+$
+$>./title
+$
+$>
+
+with the number of repetitions followed by the character.
+
+If the string is empty or if the number of arguments is not 1, display a \n.
+
+If a character appears once, don't print the count (just the character).
+
+Examples:
+
+$> ./rle "AAABBC" | cat -e
+3A2BC$
+$> ./rle "ABCD" | cat -e
+ABCD$
+$> ./rle "" | cat -e
+$
+$> ./rle | cat -e
+$
+
 

@@ -767,3 +767,243 @@ os
 $>./str_maxlenoc | cat -e
 $
 
+
+Assignment name  : aff_j
+Expected files   : aff_j.c
+Version          : 1
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a string, and displays the first 'j' character it
+encounters in it, followed by a newline. If there are no 'j' characters in the
+string, the program diplays 'j' followed by a newline. If the number of parameters is not
+1, the program displays 'j' followed by a newline.
+
+Example:
+
+$> ./aff_j "abc" | cat -e
+j$
+$> ./aff_j 'RaInB0w d4Sh!' | cat -e
+j$
+$> ./aff_j 'ThE C4k3 Is a L|3' | cat -e
+j$
+$> ./aff_j 'C0cOnUt 0N th3 b3AcH' | cat -e
+j$
+$> ./aff_j | cat -e
+j$
+    -e 
+
+Assignment name  : aff_last_param
+Expected files   : aff_last_param.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes strings as arguments, and displays its last
+argument followed by a newline.
+
+If the number of arguments is less than 1, the program displays a newline.
+
+Examples:
+
+$> ./aff_last_param "Zelda" "is" "a" "boy" | cat -e
+boy$
+$> ./aff_last_param 'I read this on internet !' | cat -e
+I read this on internet !$
+$> ./aff_last_param | cat -e
+$
+-e 
+
+Assignment name  : base16
+Expected files   : base16.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a single decimal number as argument and display its
+base 16 representation to the standard output, followed by a \n.
+
+The input will always be a valid positive integer or zero.
+You must not handle invalid inputs (negative numbers, non-numeric characters).
+
+If the number of arguments is not 1, the program displays a \n.
+
+Base 16 uses the following symbols:
+0 = 0, 1 = 1, 2 = 2, 3 = 3, 4 = 4, 5 = 5, 6 = 6, 7 = 7, 8 = 8, 9 = 9,
+A = 10, B = 11, C = 12, D = 13, E = 14, F = 15
+
+Base 16 conversion rules:
+- Each position represents a power of 16 (rightmost is 16^0, next is 16^1, etc.)
+- To convert from decimal: repeatedly divide by 16 and use remainders as digits
+- Convert each remainder to its corresponding symbol (0-9 for 0-9, A-F for 10-15)
+
+Examples:
+$>./base16 "0" | cat -e
+0$
+$>./base16 "10" | cat -e
+A$
+$>./base16 "15" | cat -e
+F$
+$>./base16 "16" | cat -e
+10$
+$>./base16 "255" | cat -e
+FF$
+$>./base16 "256" | cat -e
+100$
+$>./base16 "3735928559" | cat -e
+DEADBEEF$
+$>./base16 | cat -e
+$-e 
+
+Assignment name  : count_letters
+Expected files   : count_letters.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a string and counts the number of alphabetical characters (a-z, A-Z) in it. 
+
+Your program should display the number followed by a \n.
+
+If the string is empty or if the number of arguments is not 1, display a \n.
+
+Example : 
+
+$> ./count_letters "Hello World"
+10$
+$> ./count_letters "H3ll0 W0rld" | cat -e
+7$
+$> ./count_letters "" | cat -e
+$
+$> ./count_letters "1337" | cat -e
+0$
+-e 
+
+Assignment name  : ft_putnbr
+Expected files   : ft_putnbr.c
+Version          : 1
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+
+Write a function that displays the number entered as a parameter. The function
+has to be able to display all possible values within an int type variable.
+
+
+Your function must be declared as follows:
+
+void    ft_putnbr(int nb);
+-e 
+
+Assignment name  : ft_strlen
+Expected files   : ft_strlen.c
+Allowed functions: 
+--------------------------------------------------------------------------------
+
+Write a function that returns the length of a string.
+
+Your function must be declared as follows:
+
+int	ft_strlen(char *str);
+-e 
+
+Assignment name  : maff_alpha
+Expected files   : maff_alpha.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that displays the alphabet, with even letters in uppercase, and
+odd letters in lowercase, followed by a newline.
+
+Example:
+
+$> ./maff_alpha | cat -e
+aBcDeFgHiJkLmNoPqRsTuVwXyZ$
+-e 
+
+Assignment name  : nth_char
+Expected files   : nth_char.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+Write a function that takes two arguments: a string and a positive integer n.
+The function should print every nth character from the string, starting from 
+the nth position.
+
+The input string will contain only printable ASCII characters.
+
+If n is not a positive integer, print only a newline.
+If the string is empty, print only a newline.
+If n is greater than the string length, print only a newline.
+
+
+Your function must be declared as follows:
+		void print_nth_char(char *str, int n);
+
+Examples:
+int main(void)
+{
+    print_nth_char("ABCDEF", 2);    // prints "BDF\n"
+    print_nth_char("PROGRAMMING", 3); // prints "OAI\n"
+    print_nth_char("HELLOQUAD", 4);  // prints "LA\n"
+    print_nth_char("ABC", 1);        // prints "ABC\n"
+    print_nth_char("ABCDEF", 0);     // prints "\n"
+    print_nth_char("", 2);           // prints "\n"
+    return (0);
+}
+-e 
+
+Assignment name  : rle
+Expected files   : rle.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a single string as an argument and applies a basic
+run-length encoding algorithm.
+
+The input string contains only uppercase letters (A–Z),
+with no character repeated more than 9 times consecutively.
+
+The RLE algorithm compresses sequences of the same character by replacing them
+with the number of repetitions followed by the character.
+
+If the string is empty or if the number of arguments is not 1, display a \n.
+
+If a character appears once, don't print the count (just the character).
+
+Examples:
+
+$> ./rle "AAABBC" | cat -e
+3A2BC$
+$> ./rle "ABCD" | cat -e
+ABCD$
+$> ./rle "" | cat -e
+$
+$> ./rle | cat -e
+$
+-e 
+
+Assignment name  : search_and_replace
+Expected files   : search_and_replace.c
+Allowed functions: write, exit
+Version          : 1
+--------------------------------------------------------------------------------
+
+Write a program called search_and_replace that takes 3 arguments, the first 
+arguments is a string in which to replace a letter (2nd argument) by
+another one (3rd argument).
+
+If the number of arguments is not 3, or if the argument #2 and #3 aren't strings composed of only one character, just display a newline.
+
+If the second argument is not contained in the first one (the string)
+then the program simply rewrites the string followed by a newline.
+
+Examples:
+$>./search_and_replace "My life for Aizr" "z" "u"
+My life for Aiur
+$>./search_and_replace "gaetan" "art" "zul" | cat -e
+$
+$>./search_and_replace "ol is at home" "ol" "w" | cat -e
+$
+$>./search_and_replace "zaz" "r" "u" | cat -e
+zaz$
+$>./search_and_replace "jacob" "a" "b" "c" "e" | cat -e
+$
+$>./search_and_replace "In foct, stoff crew ore very nice. They like metol." "o" "a" | cat -e
+In fact, staff crew are very nice. They like metal.$

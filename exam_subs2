@@ -1007,3 +1007,192 @@ $>./search_and_replace "jacob" "a" "b" "c" "e" | cat -e
 $
 $>./search_and_replace "In foct, stoff crew ore very nice. They like metol." "o" "a" | cat -e
 In fact, staff crew are very nice. They like metal.$
+
+
+Assignment name  : aff_first_param
+Expected files   : aff_first_param.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes strings as arguments, and displays its first
+argument followed by a \n.
+
+If the number of arguments is less than 1, the program displays \n.
+
+Example:
+
+$> ./aff_first_param it is at this moment jackson knew | cat -e
+it$
+$> ./aff_first_param "I bet you can't print me" | cat -e
+I bet you can't print me$
+$> ./aff_first_param | cat -e
+$
+-e 
+
+Assignment name  : aff_i
+Expected files   : aff_i.c
+Version          : 1
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a string, and displays the first 'i' character it
+encounters in it, followed by a newline. If there are no 'i' characters in the
+string, the program diplays 'i' followed by a newline. If the number of parameters is not
+1, the program displays 'i' followed by a newline.
+
+Example:
+
+$> ./aff_i "abc" | cat -e
+i$
+$> ./aff_i 'RaInB0w d4Sh!' | cat -e
+i$
+$> ./aff_i 'ThE C4k3 Is a L|3' | cat -e
+i$
+$> ./aff_i 'C0cOnUt 0N th3 b3AcH' | cat -e
+i$
+$> ./aff_i | cat -e
+i$
+    -e 
+
+Assignment name  : digit_sum
+Expected files   : digit_sum.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a single positive integer as a string argument and displays
+the result of repeatedly summing its digits until only one digit remains to the
+standard output, followed by a \n.
+
+The input will always be a valid non-negative integer (no need to handle invalid
+characters or negative values).
+
+If the number of arguments is not 1, the program displays a \n.
+
+Examples:
+$>./digit_sum "0" | cat -e
+0$
+$>./digit_sum "1337" | cat -e
+5$
+$>./digit_sum "10" | cat -e
+1$
+$>./digit_sum "999" | cat -e
+9$
+$>./digit_sum "123" | cat -e
+6$
+$>./digit_sum "241" | cat -e
+7$
+$>./digit_sum "12" "34" "56" | cat -e
+$
+$>./digit_sum | cat -e
+$
+-e 
+
+Assignment name  : first_last_char
+Expected files   : first_last_char.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a string as argument and displays only the first
+and last character of that string, followed by a newline.
+
+If the string is empty or if the number of arguments is not 1, display only
+a newline.
+
+If the string has only one character, display that character twice.
+
+Examples:
+
+$> ./first_last_char "hello"
+ho
+$> ./first_last_char "world" | cat -e
+wd$
+$> ./first_last_char "a" | cat -e
+aa$
+$> ./first_last_char "" | cat -e
+$
+$> ./first_last_char | cat -e
+$
+-e 
+
+Assignment name  : ft_putnbr
+Expected files   : ft_putnbr.c
+Version          : 1
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+
+Write a function that displays the number entered as a parameter. The function
+has to be able to display all possible values within an int type variable.
+
+
+Your function must be declared as follows:
+
+void    ft_putnbr(int nb);
+-e 
+
+Assignment name  : maff_revalpha
+Expected files   : maff_revalpha.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that displays the alphabet in reverse, with even letters in
+uppercase, and odd letters in lowercase, followed by a newline.
+
+Example:
+
+$> ./maff_revalpha | cat -e
+zYxWvUtSrQpOnMlKjIhGfEdCbA$
+-e 
+
+Assignment name  : nth_char
+Expected files   : nth_char.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+Write a function that takes two arguments: a string and a positive integer n.
+The function should print every nth character from the string, starting from 
+the nth position.
+
+The input string will contain only printable ASCII characters.
+
+If n is not a positive integer, print only a newline.
+If the string is empty, print only a newline.
+If n is greater than the string length, print only a newline.
+
+
+Your function must be declared as follows:
+		void print_nth_char(char *str, int n);
+
+Examples:
+int main(void)
+{
+    print_nth_char("ABCDEF", 2);    // prints "BDF\n"
+    print_nth_char("PROGRAMMING", 3); // prints "OAI\n"
+    print_nth_char("HELLOQUAD", 4);  // prints "LA\n"
+    print_nth_char("ABC", 1);        // prints "ABC\n"
+    print_nth_char("ABCDEF", 0);     // prints "\n"
+    print_nth_char("", 2);           // prints "\n"
+    return (0);
+}
+-e 
+
+Assignment name  : occ_z
+Expected files   : occ_z.c
+Allowed functions:
+Version          : 1
+--------------------------------------------------------------------------------
+
+Write a function that return the number of occurence of the character 'Z'
+in the given string.
+
+
+For example:
+XxxxYyy
+0
+
+XxZZyZ
+3
+
+Your function must be declared as follows:
+
+int     occ_z(char *str);
+

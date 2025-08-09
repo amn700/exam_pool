@@ -1,7 +1,3 @@
-}
-
-
-
 Assignment name  : maff_alpha
 Expected files   : maff_alpha.c
 Allowed functions: write
@@ -13,3 +9,4 @@ odd letters in lowercase, followed by a newline.
 Example:
 
 $> ./maff_alpha | cat -e
+aBcDeFgHiJkLmNoPqRsTuVwXyZ$

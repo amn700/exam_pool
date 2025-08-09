@@ -1,4 +1,3 @@
-}
 Assignment name  : odd
 Expected files   : odd.c
 Allowed functions: write
@@ -13,3 +12,4 @@ $> ./odd
 13579
 $> ./odd | cat -e
 13579$
+$>

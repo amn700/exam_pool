@@ -1,5 +1,3 @@
-int count_alen(char *str);
-
 Assignment name  : aff_last_param
 Expected files   : aff_last_param.c
 Allowed functions: write

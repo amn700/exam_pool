@@ -1,4 +1,3 @@
->
 Assignment name  : rle
 Expected files   : rle.c
 Allowed functions: write

@@ -1,5 +1,3 @@
--e 
-
 Assignment name  : aff_u
 Expected files   : aff_u.c
 Version          : 1
@@ -24,3 +22,5 @@ $> ./aff_u 'C0cOnUt 0N th3 b3AcH' | cat -e
 u$
 $> ./aff_u | cat -e
 u$
+    
+-e

@@ -1,5 +1,3 @@
-s$
-
 Assignment name  : ft_putnbr
 Expected files   : ft_putnbr.c
 Version          : 1
@@ -12,3 +10,5 @@ has to be able to display all possible values within an int type variable.
 
 
 Your function must be declared as follows:
+
+void    ft_putnbr(int nb);

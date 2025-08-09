@@ -1,3 +1,5 @@
+$
+
 Assignment name  : occ_a
 Expected files   : occ_a.c
 Allowed functions:
@@ -15,3 +17,5 @@ ZzAaa
 1
 
 Your function must be declared as follows:
+
+int     occ_a(char *str);

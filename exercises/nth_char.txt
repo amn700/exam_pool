@@ -1,3 +1,5 @@
+$
+
 Assignment name  : nth_char
 Expected files   : nth_char.c
 Allowed functions: write
@@ -26,3 +28,4 @@ int main(void)
     print_nth_char("ABCDEF", 0);     // prints "\n"
     print_nth_char("", 2);           // prints "\n"
     return (0);
+}

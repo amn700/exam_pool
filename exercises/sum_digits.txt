@@ -20,3 +20,4 @@
 //     sum_digits("hello") // returns 0
 //     sum_digits("42") // returns 6
 //     sum_digits("") // returns 0
+// }

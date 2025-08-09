@@ -1,5 +1,3 @@
-int count_alen(char *str);
-
 Assignment name  : count_letters
 Expected files   : count_letters.c
 Allowed functions: write
@@ -20,3 +18,4 @@ $> ./count_letters "H3ll0 W0rld" | cat -e
 $> ./count_letters "" | cat -e
 $
 $> ./count_letters "1337" | cat -e
+0$

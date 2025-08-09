@@ -1,3 +1,5 @@
+$
+
 Assignment name  : title
 Expected files   : title.c
 Version          : 1
@@ -24,3 +26,4 @@ $>./title "one" "two" | cat -e
 $
 $>./title
 $
+$>

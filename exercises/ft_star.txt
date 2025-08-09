@@ -1,6 +1,3 @@
-void    ft_putnbr(int nb);
-
-
 Assignment name  : ft_star
 Expected files   : ft_star.c
 Allowed functions: write
@@ -15,3 +12,4 @@ $>./ft_star
 *******
 $>./ft_star | cat -e
 *******$
+$>

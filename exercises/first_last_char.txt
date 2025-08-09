@@ -1,3 +1,4 @@
+$
 Assignment name  : first_last_char
 Expected files   : first_last_char.c
 Allowed functions: write

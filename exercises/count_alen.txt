@@ -1,7 +1,3 @@
-zYxWvUtSrQpOnMlKjIhGfEdCbA$
-
-
-
 Assignment name  : count_alen
 Expected files   : count_alen.c
 Allowed functions:
@@ -14,3 +10,5 @@ encourred.
 If no 'a' is present in the string, return the total length of the string.
 
 Your function must be declared as follows:
+
+int count_alen(char *str);

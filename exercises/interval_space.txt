@@ -1,5 +1,3 @@
--e 
-
 Assignment name  : interval_space
 Expected files   : interval_space.c
 Allowed functions: write
@@ -21,3 +19,6 @@ $>./interval_space | cat -e
 $
 $>./interval_space "" | cat -e
 $
+
+
+-e

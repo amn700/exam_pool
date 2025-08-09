@@ -1,5 +1,3 @@
-// }
-
 Assignment name  : aff_k
 Expected files   : aff_k.c
 Version          : 1
@@ -22,3 +20,4 @@ k$
 $> ./aff_k 'C0cOnUt 0N th3 b3AcH' | cat -e
 k$
 $> ./aff_k | cat -e
+k$

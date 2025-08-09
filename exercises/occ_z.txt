@@ -1,5 +1,3 @@
--e 
-
 Assignment name  : occ_z
 Expected files   : occ_z.c
 Allowed functions:
@@ -20,3 +18,6 @@ XxZZyZ
 Your function must be declared as follows:
 
 int     occ_z(char *str);
+
+
+-e

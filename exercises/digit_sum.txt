@@ -1,4 +1,3 @@
->
 Assignment name  : digit_sum
 Expected files   : digit_sum.c
 Allowed functions: write

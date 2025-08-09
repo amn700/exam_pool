@@ -1,5 +1,3 @@
->
-
 Assignment name  : aff_first_param
 Expected files   : aff_first_param.c
 Allowed functions: write

@@ -1,5 +1,3 @@
-int     occ_a(char *str);
-
 Assignment name  : is_palindrome
 Expected files   : is_palindrome.c
 Version          : 1.1
@@ -24,3 +22,4 @@ $>./is_palindrome "one" "two" | cat -e
 $
 $>./is_palindrome
 $
+$>

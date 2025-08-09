@@ -4156,4 +4156,63 @@ Your function must be declared as follows:
 int     occ_z(char *str);
 
 
+Assignment name  : aff_d
+Expected files   : aff_d.c
+Version          : 1
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Write a program that takes a string, and displays the first 'd' character it
+encounters in it, followed by a newline. If there are no 'd' characters in the
+string, the program diplays 'd' followed by a newline. If the number of parameters is not
+1, the program displays 'd' followed by a newline.
+
+Example:
+
+$> ./aff_d "abc" | cat -e
+d$
+$> ./aff_d 'RaInB0w d4Sh!' | cat -e
+d$
+$> ./aff_d 'ThE C4k3 Is a L|3' | cat -e
+d$
+$> ./aff_d 'C0cOnUt 0N th3 b3AcH' | cat -e
+d$
+$> ./aff_d | cat -e
+d$
+    -e 
+
+Assignment name  : count_alen
+Expected files   : count_alen.c
+Allowed functions:
+Version          : 1
+--------------------------------------------------------------------------------
+
+Write a function that return the length of a string until the first 'a' character
+encourred.
+
+If no 'a' is present in the string, return the total length of the string.
+
+Your function must be declared as follows:
+
+int count_alen(char *str);
+
+-e 
+
+Assignment name  : even
+Expected files   : even.c
+Allowed functions: write
+Version          : 1
+--------------------------------------------------------------------------------
+
+Write a program that display all even digits from 0 to 10, followed by a
+newline '\n'.
+
+Example:
+
+$> ./even
+0246810
+$> ./even | cat -e
+0246810$
+$>
+
 
